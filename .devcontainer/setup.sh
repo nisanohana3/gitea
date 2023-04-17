@@ -6,5 +6,5 @@ make build
 if [ ! -f custom/conf/app.ini ]
 then
     mkdir -p custom/conf/
-    echo -e "\n[database]\nDB_TYPE = sqlite3\nPATH = ${containerWorkspaceFolderBasename}/data/gitea.db" >> custom/conf/app.ini
+    echo -e "\n[database]\nDB_TYPE = sqlite3\nPATH = $DEVCONTAINER_REPO_ROOT/data/gitea.db" >> custom/conf/app.ini
 fi
