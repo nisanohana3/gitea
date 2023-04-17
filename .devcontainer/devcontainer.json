@@ -16,8 +16,8 @@
 	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "make deps; make build",
-	"postStartCommand": "bash ./.devcontainer/start.sh",
+	"postCreateCommand": "bash .devcontainer/setup.sh",
+	"postStartCommand": "make watch",
 
 	"customizations": {
 		"vscode": {
