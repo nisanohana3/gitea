@@ -18,6 +18,8 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash .devcontainer/setup.sh",
 	"postStartCommand": "make watch",
+		
+	"containerEnv": { "TAGS": "sqlite sqlite_unlock_notify" },
 
 	"customizations": {
 		"vscode": {
