@@ -1,5 +1,8 @@
 #!/bin/bash
 
+make deps
+make build
+
 if [ ! -f custom/conf/app.ini ]
 then
     mkdir -p custom/conf/
