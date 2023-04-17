@@ -8,4 +8,4 @@ then
 fi
 export TAGS="sqlite sqlite_unlock_notify"
 
-make watch-backend & make watch-frontend
+make watch
