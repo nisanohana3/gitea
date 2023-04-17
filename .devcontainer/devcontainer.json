@@ -19,7 +19,9 @@
 	"postCreateCommand": "bash .devcontainer/setup.sh",
 	"postStartCommand": "make watch",
 		
-	"containerEnv": { "TAGS": "sqlite sqlite_unlock_notify" },
+	"containerEnv": { "TAGS": "sqlite sqlite_unlock_notify", 
+			  "DEVCONTAINER_REPO_ROOT" : "/workspaces/gitea"
+			},
 
 	"customizations": {
 		"vscode": {
